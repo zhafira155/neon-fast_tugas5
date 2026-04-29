@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiket konser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div
+      class="relative bg-gradient-to-br from-black via-purple-900 to-black min-h-screen flex flex-col overflow-hidden"
+    >
+      <div
+        class="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/20 blur-3xl rounded-full"
+      ></div>
+      <div
+        class="absolute -bottom-32 -right-32 w-96 h-96 bg-pink-500/20 blur-3xl rounded-full"
+      ></div>
+
+      <!-- TITLE -->
+      <div class="text-center pt-16">
+        <h2
+          class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(168,85,247,0.7)]"
+        >
+          TICKET PAYMENT
+        </h2>
+
+        <span
+          class="block h-1 w-20 mx-auto mt-3 rounded bg-gradient-to-r from-pink-500 to-purple-500"
+        ></span>
+
+        <p class="text-gray-400 text-sm mt-3">
+          Secure your seat and enjoy the festival experience
+        </p>
+      </div>
+      <div class="flex-1 flex items-center justify-center px-6 -mt-10">
+        <div class="grid md:grid-cols-3 gap-6 w-full max-w-6xl">
+          <!-- LEFT FORM -->
+          <div
+            class="md:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg shadow-[0_0_30px_rgba(168,85,247,0.2)]"
+          >
+            <div class="flex justify-between items-center mb-6">
+              <h2
+                class="text-xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+              >
+                Ticket Checkout
+              </h2>
+
+              <a
+                href="index.html"
+                class="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm shadow-[0_0_10px_rgba(168,85,247,0.5)] hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500 transition"
+              >
+                Back
+              </a>
+            </div>
+
+            <h3 class="text-sm mb-4 text-gray-300">Your Information</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Nama"
+                class="input-neon w-full bg-black/40 text-white border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="input-neon w-full bg-black/40 text-white border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+              <input
+                type="text"
+                placeholder="No HP"
+                class="input-neon w-full bg-black/40 text-white border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+              <input
+                type="number"
+                id="qty"
+                value="1"
+                min="1"
+                class="input-neon w-full bg-black/40 text-white border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+            </div>
+            <p class="text-xs text-gray-400 mt-4">
+              Pastikan data sudah benar sebelum pembayaran.
+            </p>
+            <h3 class="mt-6 mb-3 text-sm text-gray-300">Payment Method</h3>
+
+            <div class="flex gap-6 text-sm text-gray-300 mb-4">
+              <label><input type="radio" name="pay" /> E-Wallet</label>
+              <label><input type="radio" name="pay" /> Bank</label>
+              <label><input type="radio" name="pay" /> QRIS</label>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Nama Pemilik"
+                class="input-neon w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+              <input
+                type="text"
+                placeholder="Nomor Kartu"
+                class="input-neon w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+              <input
+                type="text"
+                placeholder="CVV"
+                class="input-neon w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+              <input
+                type="text"
+                placeholder="MM/YY"
+                class="input-neon w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 transition"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg shadow-[0_0_30px_rgba(236,72,153,0.2)]"
+          >
+            <h2 class="text-lg font-semibold mb-4 text-white">Your Ticket</h2>
+
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg"
+              ></div>
+              <div>
+                <p class="text-sm text-white">Neon Fest 2026</p>
+                <p class="text-xs text-gray-400">VIP Ticket</p>
+              </div>
+            </div>
+
+            <!-- PRICE -->
+            <div class="text-sm text-gray-300 space-y-2 mb-4">
+              <div class="flex justify-between">
+                <span>Harga</span>
+                <span id="price" data-price="300000">IDR 300.000</span>
+              </div>
+
+              <div class="flex justify-between">
+                <span>Diskon</span>
+                <span id="discount">0%</span>
+              </div>
+
+              <div class="flex justify-between font-semibold text-white">
+                <span>Total</span>
+                <span id="total">IDR 300.000</span>
+              </div>
+            </div>
+
+            <button
+              class="text-white w-full py-2 rounded-lg bg-gradient-to-r from-pink-500 to-purple-500 hover:scale-105 transition shadow-[0_0_20px_rgba(236,72,153,0.7)]"
+            >
+              Proceed to Pay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

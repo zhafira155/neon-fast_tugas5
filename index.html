@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10"
+    >
+      <!-- CHECKBOX (HARUS DI ATAS SEMUA) -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- LOGO -->
+        <h1
+          class="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+        >
+          NEON <span class="text-white text-lg">FEST</span>
+        </h1>
+
+        <!-- MENU DESKTOP -->
+        <ul class="hidden md:flex gap-8 text-white text-sm font-medium">
+          <li><a href="index.html" class="hover:text-pink-400">HOME</a></li>
+          <li><a href="#about" class="hover:text-pink-400">ABOUT</a></li>
+          <li><a href="#lineup" class="hover:text-pink-400">LINEUP</a></li>
+          <li><a href="#tickets" class="hover:text-pink-400">TICKETS</a></li>
+          <li><a href="#gallery" class="hover:text-pink-400">GALLERY</a></li>
+          <li>
+            <a href="#testimonials" class="hover:text-pink-400">TESTIMONIALS</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-pink-400">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- BUTTON DESKTOP -->
+        <a
+          href="#tickets"
+          class="hidden md:inline-block bg-gradient-to-r from-pink-500 to-purple-500 px-5 py-2 rounded-full text-white text-sm font-semibold hover:scale-105 transition"
+        >
+          BUY TICKET
+        </a>
+
+        <!-- HAMBURGER -->
+        <label
+          for="menu-toggle"
+          class="md:hidden text-white text-2xl cursor-pointer"
+        >
+          ☰
+        </label>
+      </div>
+
+      <div
+        class="hidden peer-checked:flex flex-col items-center bg-black/95 text-white text-sm font-medium space-y-4 py-6 md:hidden"
+      >
+        <a href="index.html" class="hover:text-pink-400">HOME</a>
+        <a href="#about" class="hover:text-pink-400">ABOUT</a>
+        <a href="#lineup" class="hover:text-pink-400">LINEUP</a>
+        <a href="#tickets" class="hover:text-pink-400">TICKETS</a>
+        <a href="#gallery" class="hover:text-pink-400">GALLERY</a>
+        <a href="#testimonials" class="hover:text-pink-400">TESTIMONIALS</a>
+        <a href="contact.html" class="hover:text-pink-400">CONTACT</a>
+
+        <!-- BUTTON MOBILE -->
+        <a
+          href="#tickets"
+          class="mt-4 bg-gradient-to-r from-pink-500 to-purple-500 px-5 py-2 rounded-full hover:scale-105 transition"
+        >
+          BUY TICKET
+        </a>
+      </div>
+    </nav>
+    <section class="relative w-full h-[90vh] flex items-center">
+      <div class="absolute inset-0">
+        <img
+          src="https://i.pinimg.com/1200x/0c/44/a9/0c44a9d36d243a3929cafc07a33a24c9.jpg"
+          class="w-full h-full object-cover"
+          alt="festival"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"
+        ></div>
+      </div>
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-6">
+        <div class="max-w-xl">
+          <p class="text-2 text-sm text-pink-800 font-bold mb-3">
+            FEEL THE BEAT, LIVE THE NIGHT
+          </p>
+          <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+            <span class="text-white">NEON</span><br />
+            <span
+              class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+            >
+              <i>FEST 2026</i>
+            </span>
+          </h1>
+          <p class="text-gray-300 mb-6">
+            The biggest music festival of the year is coming! Top artists,
+            amazing stage, and unforgettable experience.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="#tickets"
+              class="text-white bg-gradient-to-r from-pink-500 to-purple-500 px-5 py-3 rounded-full hover:scale-105 transition"
+            >
+              BUY TICKET
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-3 text-white hover:text-pink-400"
+            >
+              <div
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-black border-2 border-white"
+              >
+                <i class="fa-solid fa-play text-white text-sm"></i>
+              </div>
+              <span class="text-sm font-medium">WATCH TRAILER</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about text-gray-600 body-font" id="about">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div
+          class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10"
+        >
+          <div class="w-full sm:p-4 px-4 mb-6">
+            <h5
+              class="bg-gradient-to-r from-pink-500 to-purple-700 bg-clip-text text-transparent tracking-wider font-bold mb-5"
+            >
+              ABOUT THE FESTIVAL
+            </h5>
+            <h1 class="title-font font-medium text-3xl mb-3 text-white">
+              MOON THAN JUST MUSIC
+            </h1>
+            <div class="text-white">
+              Neon Fest hadir bukan cuma untuk hiburan—ini adalah pengalaman,
+              tempat di mana musik, cahaya, dan energi bertemu menciptakan momen
+              yang tak terlupakan.
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div
+              class="w-14 h-14 inline-flex items-center justify-center rounded-full bg-purple-900/20 text-purple-400 mb-5 flex-shrink-0"
+            >
+              <i class="fa-solid fa-music text-3xl text-pink-500"></i>
+            </div>
+            <div class="flex-grow">
+              <h2
+                class="text-white text-lg title-font font-medium mb-3 text-white"
+              >
+                Top Artist
+              </h2>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div
+              class="w-14 h-14 inline-flex items-center justify-center rounded-full bg-purple-900/20 text-purple-400 mb-5 flex-shrink-0"
+            >
+              <i class="fa-solid fa-star text-3xl text-pink-300"></i>
+            </div>
+            <div class="flex-grow">
+              <h2
+                class="text-white text-lg title-font font-medium mb-3 text-white"
+              >
+                Amazing Stage
+              </h2>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div
+              class="w-14 h-14 inline-flex items-center justify-center rounded-full bg-purple-900/20 text-purple-400 mb-5 flex-shrink-0"
+            >
+              <i class="fa-solid fa-users text-3xl text-pink-300"></i>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
+                Unforgettable Experience
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden border-2 border-white mt-6 sm:mt-0"
+        >
+          <img
+            class="object-cover object-center w-full h-full"
+            src="Asset/konser-1.jpg"
+            alt="stats"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- LINEUP -->
+    <section class="lineup text-white py-20" id="lineup">
+      <div class="container mx-auto px-5">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-10">
+          <div>
+            <p class="text-purple-400 text-sm">LINEUP</p>
+            <h1 class="text-3xl font-bold">AMAZING ARTISTS</h1>
+          </div>
+          <button
+            class="border border-purple-500 px-4 py-2 rounded-full text-sm hover:bg-purple-600 transition"
+          >
+            VIEW ALL ARTISTS
+          </button>
+        </div>
+        <div
+          class="flex overflow-x-auto gap-6 snap-x snap-mandatory scroll-smooth pb-4 px-6"
+        >
+          <!-- CARD -->
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img
+                src="Asset/mashmellow.jpg"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">MARSHMELLOW</h2>
+                <p class="text-purple-400 text-xs">18 JULY</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img
+                src="Asset/alan-walker.jpg"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">ALAN WALKER</h2>
+                <p class="text-purple-400 text-xs">18 JULY</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img src="Asset/zedd.jpg" class="w-full h-40 object-cover" />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">ZEDD</h2>
+                <p class="text-purple-400 text-xs">19 JULY</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img
+                src="Asset/martin-garrix.jpg"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">MARTIN GARRIX</h2>
+                <p class="text-purple-400 text-xs">19 JULY</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img src="Asset/dj-snake.jpg" class="w-full h-40 object-cover" />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">DJ SNAKE</h2>
+                <p class="text-purple-400 text-xs">20 JULY</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/71/45/fa/7145fa77c73fe3421de13d4c0f1498a2.jpg"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">DAVID GUETTA</h2>
+                <p class="text-purple-400 text-xs">20 JULY</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img src="Asset/armin-van.jpg" class="w-full h-40 object-cover" />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">ARMIN VAN BUUREN</h2>
+                <p class="text-purple-400 text-xs">21 JULY</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="min-w-[160px] sm:min-w-[180px] md:min-w-[200px] snap-start"
+          >
+            <div
+              class="bg-white/5 border border-purple-800/30 rounded-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/30 hover:shadow-lg transition duration-300"
+            >
+              <img src="Asset/alok.jpg" class="w-full h-40 object-cover" />
+              <div class="p-3 text-center">
+                <h2 class="text-sm font-semibold">ALOK</h2>
+                <p class="text-purple-400 text-xs">21 JULY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TICKETS -->
+    <section class="text-white body-font bg-black" id="tickets">
+      <div class="container px-5 py-20 mx-auto text-center">
+        <h1
+          class="text-center text-3xl md:text-4xl font-bold leading-tight mb-5"
+        >
+          <span
+            class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+          >
+            TICKET PRICING
+          </span>
+          <span
+            class="block h-1 w-20 bg-gradient-to-r from-blue-500 to-pink-500 mt-2 rounded mx-auto"
+          ></span>
+        </h1>
+        <br />
+        <div class="flex flex-wrap -m-4 justify-center">
+          <!-- EARLY BIRD -->
+          <div class="p-4 md:w-1/3">
+            <div
+              class="relative overflow-hidden h-full bg-white/5 border border-purple-900 rounded-xl p-8 text-left transition-all duration-300 ease-out transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-purple-500/30"
+            >
+              <h2 class="text-purple-400 text-lg font-semibold mb-4">
+                EARLY BIRD
+              </h2>
+              <h1 class="text-2xl font-bold mb-6">IDR 100.000</h1>
+              <ul class="mb-6 space-y-2 text-sm text-gray-300">
+                <li>
+                  <i class="fa-solid fa-check text-purple-500"></i> Festival
+                  Entry
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-purple-500"></i> Access to
+                  Main Stage
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-purple-500"></i> General Area
+                </li>
+              </ul>
+              <a
+                href="early-bird.html"
+                class="group relative block w-full text-center py-2 rounded-lg border border-purple-500 text-purple-400 font-medium overflow-hidden transition-all duration-300 hover:text-white active:scale-95"
+              >
+                <!-- BACKGROUND GRADIENT -->
+                <span
+                  class="absolute inset-0 bg-gradient-to-r from-purple-900 via-purple-700 to-pink-500 opacity-0 group-hover:opacity-100 transition duration-300"
+                ></span>
+
+                <!-- TEXT -->
+                <span class="relative z-10">BUY NOW</span>
+              </a>
+              <div
+                class="absolute inset-0 rounded-xl opacity-0 hover:opacity-100 transition duration-300 bg-gradient-to-r from-purple-500/10 to-pink-500/10 blur-xl pointer-events-none"
+              ></div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div
+              class="relative overflow-visible h-full bg-white/5 border-2 border-purple-500 rounded-xl p-8 text-left shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all duration-300 ease-out transform hover:-translate-y-4 hover:shadow-[0_0_40px_rgba(168,85,247,0.8)]"
+            >
+              <span
+                class="absolute z-20 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-purple-500 to-pink-500 text-xs px-3 py-1 rounded-full whitespace-nowrap"
+              >
+                MOST POPULAR
+              </span>
+              <div
+                class="absolute -inset-1 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 blur-xl z-0"
+              ></div>
+              <!-- CONTENT -->
+              <div class="relative z-10">
+                <h2 class="text-white text-lg font-semibold mb-4 mt-2">
+                  REGULAR
+                </h2>
+
+                <h1 class="text-2xl font-bold mb-6 text-white">IDR 150.000</h1>
+
+                <ul class="mb-6 space-y-2 text-gray-300 text-sm">
+                  <li>
+                    <i class="fa-solid fa-check text-purple-400"></i> Festival
+                    Entry
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check text-purple-400"></i> Access to
+                    Main Stage
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check text-purple-400"></i> Food &
+                    Drink Voucher
+                  </li>
+                </ul>
+                <a
+                  href="ticket-regular.html"
+                  class="block w-full text-center border border-purple-500 text-purple-400 py-2 rounded-lg hover:bg-gradient-to-r from-purple-900 via-purple-700 to-pink-500 hover:text-white transition"
+                >
+                  BUY NOW
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div
+              class="relative overflow-hidden h-full bg-white/5 border border-purple-900 rounded-xl p-8 text-left transition-all duration-300 ease-out transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-purple-500/30"
+            >
+              <h2 class="text-purple-400 text-lg font-semibold mb-4">VIP</h2>
+              <h1 class="text-2xl font-bold mb-6">IDR 300.000</h1>
+              <ul class="mb-6 space-y-2 text-gray-300 text-sm">
+                <li>
+                  <i class="fa-solid fa-check text-purple-500"></i> All Regular
+                  Benefits
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-purple-500"></i> VIP Viewing
+                  Area
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-purple-500"></i> Exclusive
+                  Lounge
+                </li>
+              </ul>
+              <a
+                href="ticket-vip.html"
+                class="group relative block w-full text-center py-2 rounded-lg border border-purple-500 text-purple-400 font-medium overflow-hidden transition-all duration-300 hover:text-white active:scale-95"
+              >
+                <!-- BACKGROUND GRADIENT -->
+                <span
+                  class="absolute inset-0 bg-gradient-to-r from-purple-900 via-purple-700 to-pink-500 opacity-0 group-hover:opacity-100 transition duration-300"
+                ></span>
+
+                <!-- TEXT -->
+                <span class="relative z-10">BUY NOW</span>
+              </a>
+              <!-- Glow effect -->
+              <div
+                class="absolute inset-0 rounded-xl opacity-0 hover:opacity-100 transition duration-300 bg-gradient-to-r from-purple-500/10 to-pink-500/10 blur-xl pointer-events-none"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative festival text-white body-font overflow-hidden py-10"
+      id="festival"
+    >
+      <!-- BACKGROUND IMAGE -->
+      <div class="absolute inset-0">
+        <img
+          src="https://i.pinimg.com/736x/20/96/87/20968787badf68d59a352bbe0d31e122.jpg"
+          class="w-full h-full object-cover"
+          alt="background"
+        />
+        <!-- overlay biar tetap gelap -->
+        <div class="absolute inset-0 bg-black/70"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="relative z-10">
+        <h1
+          class="text-center text-3xl md:text-5xl font-bold leading-tight mb-6"
+        >
+          <span
+            class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+          >
+            Festival Area
+          </span>
+          <span
+            class="block h-1 w-20 bg-gradient-to-r from-blue-500 to-pink-500 mt-2 rounded mx-auto"
+          ></span>
+        </h1>
+
+        <div class="container px-5 py-10 mx-auto">
+          <div class="flex flex-col md:flex-row items-center gap-10">
+            <!-- GAMBAR -->
+            <div class="w-full md:w-1/2 flex justify-center">
+              <img
+                src="Asset/seating.png"
+                alt="Stage Map"
+                class="w-full max-w-2xl h-auto object-contain hover:scale-105 transition duration-300"
+              />
+            </div>
+
+            <!-- CARD BLUR -->
+            <div class="relative w-full md:w-1/2">
+              <!-- GLOW -->
+              <div
+                class="absolute -inset-2 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-20 blur-2xl rounded-3xl"
+              ></div>
+
+              <!-- CARD -->
+              <div
+                class="relative p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl space-y-6"
+              >
+                <div class="flex items-start gap-3">
+                  <span
+                    class="w-3 h-3 mt-2 rounded-full bg-pink-500 shadow-lg shadow-pink-500/50"
+                  ></span>
+                  <div>
+                    <h2 class="font-semibold text-pink-400">VIP AREA</h2>
+                    <p class="text-gray-300 text-sm">
+                      Best view, exclusive access & premium comfort.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span
+                    class="w-3 h-3 mt-2 rounded-full bg-purple-400 shadow-lg shadow-purple-500/50"
+                  ></span>
+                  <div>
+                    <h2 class="font-semibold text-purple-300">REGULAR AREA</h2>
+                    <p class="text-gray-300 text-sm">
+                      Access to main stage with great atmosphere.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span
+                    class="w-3 h-3 mt-2 rounded-full bg-indigo-400 shadow-lg shadow-indigo-500/50"
+                  ></span>
+                  <div>
+                    <h2 class="font-semibold text-indigo-300">
+                      EARLY BIRD AREA
+                    </h2>
+                    <p class="text-gray-300 text-sm">
+                      Affordable zone with exciting festival vibes.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span
+                    class="w-3 h-3 mt-2 rounded-full bg-white shadow-lg shadow-white/50"
+                  ></span>
+                  <div>
+                    <h2 class="font-semibold text-white">MAIN STAGE</h2>
+                    <p class="text-gray-300 text-sm">
+                      The heart of Neon Fest performances.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- GALLERY -->
+    <section class="bg-black py-16 text-white" id="gallery">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- TITLE -->
+        <h2
+          class="text-3xl font-bold text-center mb-10 bg-gradient-to-r from-fuchsia-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(168,85,247,0.7)]"
+        >
+          EVENT GALLERY
+        </h2>
+        <!-- GRID -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- ITEM 1 -->
+          <div class="relative group overflow-hidden rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-300"
+            />
+
+            <!-- OVERLAY -->
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+            >
+              <p class="text-lg font-semibold">Main Stage</p>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="relative group overflow-hidden rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+            >
+              <p class="text-lg font-semibold">Crowd Energy</p>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="relative group overflow-hidden rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+            >
+              <p class="text-lg font-semibold">DJ Performance</p>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="relative group overflow-hidden rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+            >
+              <p class="text-lg font-semibold">VIP Area</p>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="relative group overflow-hidden rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1506157786151-b8491531f063"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+            >
+              <p class="text-lg font-semibold">Light Show</p>
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div class="relative group overflow-hidden rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+            >
+              <p class="text-lg font-semibold">Festival Vibes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section class="relative py-16 text-white" id="testimonials">
+      <!-- BACKGROUND IMAGE -->
+      <div class="absolute inset-0">
+        <img
+          src="https://i.pinimg.com/736x/b9/26/25/b926254e61523f1d8cbe0ca4aa8044a5.jpg"
+          class="w-full h-full object-cover"
+        />
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/70"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <h2
+          class="text-3xl font-bold text-center mb-10 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
+        >
+          TESTIMONIALS
+          <span
+            class="block h-1 w-16 mx-auto bg-gradient-to-r from-pink-500 to-purple-500 mt-3 rounded"
+          ></span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- CARD -->
+          <div
+            class="bg-pink-700/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-[0_0_20px_rgba(168,85,247,0.3)]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="block w-5 h-5 text-gray-400 mb-4"
+              viewBox="0 0 975.036 975.036"
+            >
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+              ></path>
+            </svg>
+            <p class="text-sm text-gray-200 mb-4">
+              “Konser ini benar-benar luar biasa! Suasana, musik, dan
+              lighting-nya bikin pengalaman yang nggak akan pernah aku lupakan.”
+            </p>
+
+            <div class="text-pink-400 mb-3">★★★★★</div>
+
+            <div class="flex items-center gap-3">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <p class="text-sm">Anisa Putri</p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="bg-pink-700/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-[0_0_20px_rgba(168,85,247,0.3)]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="block w-5 h-5 text-gray-400 mb-4"
+              viewBox="0 0 975.036 975.036"
+            >
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+              ></path>
+            </svg>
+            <p class="text-sm text-gray-200 mb-4">
+              “Seru banget! Datang bareng teman jadi pengalaman yang makin
+              berkesan. Pasti bakal datang lagi tahun depan.”
+            </p>
+
+            <div class="text-pink-400 mb-3">★★★★★</div>
+
+            <div class="flex items-center gap-3">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <p class="text-sm">Raka Pratama</p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="bg-pink-700/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-[0_0_20px_rgba(168,85,247,0.3)]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="block w-5 h-5 text-gray-400 mb-4"
+              viewBox="0 0 975.036 975.036"
+            >
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+              ></path>
+            </svg>
+            <p class="text-sm text-gray-200 mb-4">
+              “Produksi acara ini sangat rapi dan berkualitas. Mulai dari
+              panggung hingga pengaturan crowd semuanya top!”
+            </p>
+
+            <div class="text-pink-400 mb-3">★★★★★</div>
+
+            <div class="flex items-center gap-3">
+              <img
+                src="https://randomuser.me/api/portraits/men/45.jpg"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <p class="text-sm">Dimas Arya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-gray-400 bg-black border-t border-white/10">
+      <div class="container px-5 py-20 mx-auto">
+        <div class="flex flex-wrap md:text-left text-center">
+          <!-- MENU -->
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="text-white font-semibold tracking-widest text-sm mb-4">
+              MENU
+            </h2>
+            <nav class="list-none space-y-2">
+              <li>
+                <a href="index.html" class="hover:text-pink-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-pink-400 transition"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#lineup" class="hover:text-pink-400 transition"
+                  >Lineup</a
+                >
+              </li>
+              <li>
+                <a href="#tickets" class="hover:text-pink-400 transition"
+                  >Tickets</a
+                >
+              </li>
+            </nav>
+          </div>
+
+          <!-- EVENT -->
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="text-white font-semibold tracking-widest text-sm mb-4">
+              EVENT
+            </h2>
+            <nav class="list-none space-y-2">
+              <li>
+                <a href="#gallery" class="hover:text-purple-400 transition"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a href="#testimonials" class="hover:text-purple-400 transition"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#festival" class="hover:text-purple-400 transition"
+                  >Festival</a
+                >
+              </li>
+            </nav>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="text-white font-semibold tracking-widest text-sm mb-4">
+              CONTACT
+            </h2>
+            <nav class="list-none space-y-2">
+              <li>
+                <span class="text-gray-400"
+                  ><i class="fa-solid fa-map-pin"></i> Indonesia</span
+                >
+              </li>
+              <li>
+                <span class="text-gray-400"
+                  ><i class="fa-solid fa-envelope"></i> neonfest@email.com</span
+                >
+              </li>
+              <li>
+                <span class="text-gray-400"
+                  ><i class="fa-solid fa-phone"></i> +62 812 3456 7890</span
+                >
+              </li>
+            </nav>
+          </div>
+
+          <!-- SUBSCRIBE -->
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="text-white font-semibold tracking-widest text-sm mb-4">
+              SUBSCRIBE
+            </h2>
+
+            <div class="flex gap-2">
+              <input
+                type="text"
+                placeholder="Your email"
+                class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-500/40 outline-none"
+              />
+
+              <button
+                class="px-4 py-2 rounded-lg bg-gradient-to-r from-pink-500 to-purple-500 text-white text-sm shadow-[0_0_10px_rgba(236,72,153,0.6)] hover:shadow-[0_0_20px_rgba(168,85,247,1)] transition"
+              >
+                Send
+              </button>
+            </div>
+
+            <p class="text-gray-500 text-xs mt-3">
+              Get updates about events & tickets.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="border-t border-white/10">
+        <div
+          class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+        >
+          <!-- LOGO -->
+          <h1
+            class="text-lg font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+          >
+            NEON FEST
+          </h1>
+
+          <p class="text-sm text-gray-500 sm:ml-6 mt-4 sm:mt-0">
+            © 2026 Neon Fest — All Rights Reserved
+          </p>
+
+          <!-- SOCIAL -->
+          <span class="inline-flex sm:ml-auto mt-4 sm:mt-0 gap-4">
+            <a href="#" class="hover:text-pink-400 transition text-lg">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#" class="hover:text-purple-400 transition text-lg">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#" class="hover:text-pink-400 transition text-lg">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="hover:text-purple-400 transition text-lg">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

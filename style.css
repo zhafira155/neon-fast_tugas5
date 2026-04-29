@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.text-1 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.text-2 {
+    letter-spacing: 5px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.about {
+    background: #12021d;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.lineup {
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 74%, rgba(9, 9, 121, 1) 100%, rgba(194, 163, 163, 1) 100%);
+}
+
+.festival {
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(11, 10, 99, 1) 49%, rgba(89, 28, 163, 1) 100%);
+}
+  .input {
+        @apply bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm outline-none focus:border-purple-400;
+      }
+
+         .input-style {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 12px;
+        color: white;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      .input-style:focus {
+        border-color: #ec4899;
+        box-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+      }
